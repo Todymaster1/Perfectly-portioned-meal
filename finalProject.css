@@ -1,0 +1,73 @@
+body,
+html {
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.banner {
+    position: relative;
+    background-image: url("Perfectly Portioned Fitness.png");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: absolute;
+    border-radius: 10px;
+    background-color: #FDD9FB;
+    width: 80%;
+    max-width: 590px;
+    padding: 18px;
+    transform: translate(-4%, 35%);
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 10px;
+    position: relative;
+}
+
+label {
+    grid-column: 1;
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+input[type=text],
+select,
+textarea {
+    display: inline-block;
+    grid-column: 2;
+    width: auto;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    grid-column: span 2;
+    background-color: #D9E9FD;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    left: 50%;
+    font-weight: bold;
+}
